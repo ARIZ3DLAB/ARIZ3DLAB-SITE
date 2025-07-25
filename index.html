@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARIZ 3D LAB - Impressão 3D</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 100px;
+    }
+    h1 {
+      margin: 0;
+      color: #00bfff;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #00bfff;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #009acd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/logo-ariz3d.jpg" alt="Logo ARIZ 3D LAB">
+    <h1>ARIZ 3D LAB</h1>
+    <p>Soluções em Impressão 3D sob medida</p>
+  </header>
+
+  <div class="container">
+    <h2>Entre em Contato</h2>
+    <form action="https://formsubmit.co/guiariz2018@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://github.com/suapagina/sucesso.html">
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="assunto" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </div>
+
+</body>
+</html>

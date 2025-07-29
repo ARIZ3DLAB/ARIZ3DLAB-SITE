@@ -1,92 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARIZ 3D LAB - Impressão 3D</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARIZ 3D LAB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
       margin: 0;
-      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0a0f;
+      color: #e0f7ff;
     }
+
     header {
-      background-color: #000;
-      padding: 20px;
       text-align: center;
+      padding: 40px 20px 20px;
+      background: linear-gradient(180deg, #000010, #0a0a0f);
     }
+
     header img {
-      height: 100px;
+      width: 140px;
+      margin-bottom: 20px;
     }
+
     h1 {
+      color: #00f0ff;
+      font-size: 2.5rem;
       margin: 0;
-      color: #00bfff;
+      text-shadow: 0 0 8px #00f0ff;
     }
-    .container {
-      padding: 40px 20px;
-      max-width: 600px;
-      margin: auto;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    label {
+
+    p {
       margin-top: 10px;
-      font-weight: bold;
+      color: #a0cce0;
+      font-size: 1rem;
     }
-    input, textarea {
+
+    form {
+      background-color: #121220;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+
+    form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00d0ff;
+      text-shadow: 0 0 5px #00d0ff;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #c0eaff;
+    }
+
+    input,
+    textarea {
+      width: 100%;
       padding: 10px;
       margin-top: 5px;
       border: none;
-      border-radius: 5px;
-    }
-    button {
-      margin-top: 20px;
-      padding: 12px;
-      background-color: #00bfff;
+      border-radius: 6px;
+      background-color: #1f1f2e;
       color: #fff;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+      box-shadow: 0 0 8px #00d0ff;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 12px;
+      font-size: 1.1rem;
       font-weight: bold;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      background: linear-gradient(90deg, #00f0ff, #00aaff);
+      color: #000;
       cursor: pointer;
+      transition: all 0.3s ease;
     }
+
     button:hover {
-      background-color: #009acd;
+      background: linear-gradient(90deg, #00aaff, #00f0ff);
+      box-shadow: 0 0 12px #00f0ff;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="assets/logo-ariz3d.jpg" alt="Logo ARIZ 3D LAB">
+    <img src="assets/logo-ariz3d.jpg" alt="Logo ARIZ 3D LAB" />
     <h1>ARIZ 3D LAB</h1>
     <p>Soluções em Impressão 3D sob medida</p>
   </header>
 
-  <div class="container">
+  <form>
     <h2>Entre em Contato</h2>
-    <form action="https://formsubmit.co/guiariz2018@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://github.com/suapagina/sucesso.html">
 
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" />
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" />
 
-      <label for="assunto">Assunto:</label>
-      <input type="text" id="assunto" name="assunto" required>
+    <label for="assunto">Assunto:</label>
+    <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?" />
 
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
 
-      <button type="submit">Enviar Mensagem</button>
-    </form>
-  </div>
-
+    <button type="submit">Enviar</button>
+  </form>
 </body>
 </html>

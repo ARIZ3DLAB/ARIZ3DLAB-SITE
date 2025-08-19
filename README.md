@@ -12,7 +12,5 @@ Bem-vindo ao site da **ARIZ 3D LAB**, uma empresa especializada em soluções so
 
 Este site foi desenvolvido apenas com HTML e CSS puro, com envio de formulário via [FormSubmit](https://formsubmit.co/).
 
-## 🌐 Como acessar
 
-Se você subiu este projeto no GitHub Pages, seu site estará disponível em:
 

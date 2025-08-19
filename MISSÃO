@@ -1,0 +1,83 @@
+sobre.html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Nós - ARIZ 3D LAB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0a0f;
+      color: #e0f7ff;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      background: linear-gradient(180deg, #000010, #0a0a0f);
+    }
+    header a {
+      color: #00f0ff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header a:hover {
+      text-shadow: 0 0 8px #00f0ff;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #00d0ff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px #00d0ff;
+    }
+    section p, section ul {
+      font-size: 1.1rem;
+      color: #c0eaff;
+      line-height: 1.6;
+    }
+    section ul {
+      list-style: none;
+      padding: 0;
+    }
+    section ul li {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">🏠 Início</a>
+  </header>
+
+  <section>
+    <h2>Nossa Missão</h2>
+    <p>
+      Transformar ideias em realidade por meio da impressão 3D, oferecendo soluções sob medida
+      que unem <span style="color:#00d9ff;">tecnologia</span>, <span style="color:#00d9ff;">inovação</span> e 
+      <span style="color:#00d9ff;">criatividade</span> para clientes de diferentes setores.
+    </p>
+
+    <h2 style="margin-top:50px;">Nossos Valores</h2>
+    <ul>
+      <li>🔹 Inovação constante</li>
+      <li>🔹 Compromisso com a qualidade</li>
+      <li>🔹 Transparência e confiança</li>
+      <li>🔹 Sustentabilidade e responsabilidade</li>
+      <li>🔹 Foco no cliente</li>
+    </ul>
+  </section>
+</body>
+</html>

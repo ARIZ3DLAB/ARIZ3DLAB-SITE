@@ -23,11 +23,6 @@
       background: linear-gradient(180deg, #000010, #0a0a0f);
     }
 
-    header img {
-      width: 140px;
-      margin-bottom: 20px;
-    }
-
     h1 {
       color: #00f0ff;
       font-size: 2.5rem;
@@ -48,14 +43,11 @@
       background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
       border-radius: 12px;
       box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
-
-      /* Animação inicial */
       opacity: 0;
       transform: translateY(40px);
       transition: all 1s ease;
     }
 
-    /* Classe ativada ao aparecer na tela */
     section.visible {
       opacity: 1;
       transform: translateY(0);
@@ -164,12 +156,30 @@
     <h1>ARIZ 3D LAB</h1>
     <p>Soluções em Impressão 3D sob medida</p>
     <nav>
-  <a href="sobre.html" style="color:#00f0ff; text-decoration:none; font-weight:bold;">Sobre Nós</a>
-</nav>
-
+      <a href="#sobre" style="color:#00f0ff; text-decoration:none; font-weight:bold;">Sobre Nós</a>
+    </nav>
   </header>
 
-  <!-- Missão e Valores -->
+  <!-- Formulário de Contato -->
+  <form id="contato">
+    <h2>Entre em Contato</h2>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" />
+
+    <label for="assunto">Assunto:</label>
+    <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?" />
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Missão e Valores (movido para baixo do contato) -->
   <section id="sobre">
     <h2>Nossa Missão</h2>
     <p>
@@ -187,24 +197,6 @@
       <li>🔹 Foco no cliente</li>
     </ul>
   </section>
-
-  <form>
-    <h2>Entre em Contato</h2>
-
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" placeholder="Seu nome" />
-
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" />
-
-    <label for="assunto">Assunto:</label>
-    <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?" />
-
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
 
   <script>
     // Detecta quando a seção aparece na tela

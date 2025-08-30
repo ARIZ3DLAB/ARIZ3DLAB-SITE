@@ -195,21 +195,24 @@
     </nav>
   </header>
 
-  <!-- Formulário de Contato -->
-  <form id="contato">
+  <!-- Formulário de Contato usando Formsubmit -->
+  <form id="contato" action="https://formsubmit.co/guiariz2018@gmail.com" method="POST">
     <h2>Entre em Contato</h2>
 
     <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" placeholder="Seu nome" />
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
 
     <label for="telefone">Telefone:</label>
-    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" />
+    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required />
 
     <label for="assunto">Assunto:</label>
-    <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?" />
+    <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?" required />
 
     <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..."></textarea>
+    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+
+    <!-- Redirecionamento opcional após envio -->
+    <input type="hidden" name="_next" value="https://seusite.github.io/obrigado.html">
 
     <button type="submit">Enviar</button>
   </form>

@@ -13,14 +13,31 @@
     body {
       margin: 0;
       font-family: 'Orbitron', sans-serif;
-      background-color: #0a0a0f;
+      background: repeating-linear-gradient(
+        0deg,
+        #0a0a0f,
+        #0a0a0f 12px,
+        #111122 12px,
+        #111122 24px
+      );
+      background-size: 100% 24px;
+      animation: imprimir 8s linear infinite;
       color: #e0f7ff;
+    }
+
+    @keyframes imprimir {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 0 -24px;
+      }
     }
 
     header {
       text-align: center;
       padding: 40px 20px 20px;
-      background: linear-gradient(180deg, #000010, #0a0a0f);
+      background: rgba(0,0,0,0.6);
     }
 
     h1 {
@@ -179,7 +196,7 @@
     <button type="submit">Enviar</button>
   </form>
 
-  <!-- Missão e Valores (movido para baixo do contato) -->
+  <!-- Missão e Valores -->
   <section id="sobre">
     <h2>Nossa Missão</h2>
     <p>
@@ -199,7 +216,6 @@
   </section>
 
   <script>
-    // Detecta quando a seção aparece na tela
     const section = document.getElementById("sobre");
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
